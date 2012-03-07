@@ -1,0 +1,46 @@
+a#createTask {
+  margin-top:    10px;
+  margin-bottom: 10px;
+}
+
+div.task .onlyEdit {
+  display: none;
+}
+
+li.editing div.task .onlyEdit {
+  display: block; 
+}
+
+div.task .notEdit {
+  display: block;
+}
+
+li.editing div.task .notEdit {
+  display: none; 
+}
+
+.center {
+  text-align: center;
+}
+
+.done {
+  margin-top: 10px;
+}
+
+div.task {
+  min-height: 146px;
+  transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border:1px solid rgba(0,0,0, 0.2);
+}
+
+div.task.selected {
+  box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 255, 1); 
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 255, 1);
+  border:1px solid rgba(0,0,255, 0.8);
+}
