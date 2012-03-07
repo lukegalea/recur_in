@@ -1,3 +1,5 @@
 Inspired by the Backbone todo list by Jérôme Gravel-Niquet at http://documentcloud.github.com/backbone/examples/todos/index.html
 
-Supports recurring events with a simple natural language syntax.
+Supports recurring events with a simple natural language syntax courtesy of https://github.com/bunkat/later
+
+Check it out at http://lukegalea.github.com/recur_in
