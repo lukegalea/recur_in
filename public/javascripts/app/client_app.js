@@ -61,7 +61,7 @@ $(function() {
       if (LONG_TIME_CHECK_RE.test(scheduleRule)) {
         scheduleRule = scheduleRule + " of the year";
       }
-      console.log(scheduleRule);
+      
       var schedule = enParser().parse(scheduleRule);
       if (schedule.Error) {
         this.trigger("error", schedule.Error);
@@ -86,8 +86,9 @@ $(function() {
 
   var TaskList = app.TaskList = Backbone.Collection.extend({
     model: Task,
+    url: 'http://localhost:3000/tasks'
 
-    localStorage: new Store("tasker")
+    //localStorage: new Store("tasker")
   });
 
   var Tasks = app.Tasks = new TaskList();
